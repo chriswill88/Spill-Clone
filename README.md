@@ -1,8 +1,7 @@
 # Spill-Clone
-Spill App Clone
 
 ## Description:
-Coming Soon
+Spill App Clone
 
 
 ### Authors:

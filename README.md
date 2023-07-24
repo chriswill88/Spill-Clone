@@ -8,3 +8,4 @@ Spill App Clone
 
 Nia Anderson | Frontend Dev\
 Christian Williams | Project Manager | Backend Dev
+Shehu Muhammad | Frontend Developer

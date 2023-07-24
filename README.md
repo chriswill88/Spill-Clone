@@ -7,5 +7,5 @@ Spill App Clone
 ### Authors:
 
 Nia Anderson | Frontend Dev\
-Christian Williams | Project Manager | Backend Dev
+Christian Williams | Project Manager | Backend Dev\
 Shehu Muhammad | Frontend Developer

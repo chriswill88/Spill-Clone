@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "## Description: Spill App Clone",
   "main": "index.js",
-  "bin": {
-    "your-boilerplate-name": "./bin/start.js"
-  },
   "scripts": {
     "start": "webpack-dev-server --mode=development --open --hot",
     "build": "webpack --mode=production"

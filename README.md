@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 # Spill-Clone
 
 ## Description:
@@ -20,4 +18,3 @@ npm install
 
 npm start
 open browser at http://localhost:3000
->>>>>>> main

@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.app {
+  background-color: black;
+}
+
+/* topbar */
+.topbarContainer {
+  height: 100px;
+  width: 100%;
+  background-color: #377926;
+  border-radius: 0 0 30px 30px;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.topbarLink {
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* middlebar */
+.middleContainerLinks {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.middleContainer {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+
+/* bottombar */
+
+/* .bottombarContainer {
+    height: 100px;
+    width: 100%;
+    background-color: #0e24c6;
+    border-radius: 30px 30px 0 0;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    justify-content: space-evenly;
+  }
+  
+  .postbar {
+    width: 80%;
+    height: 30px;
+    background-color: black;
+    border-radius: 30px;
+  }
+  
+  .bottombarImg {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: grey;
+  }
+  
+  .bottombarInput {
+    border: none;
+    width: 97.5%;
+    background-color: black;
+    margin: 7.5px 0 0 2.5%;
+    color: white;
+  }
+  
+  .bottombarInput:focus {
+    outline: none;
+  } */
+
+.mainOverlay {
+  position: relative;
+  /* Add other styles for your main app layout */
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+  transition: height 0.3s ease; /* Add a transition for smooth height change */
+  overflow: hidden; /* Hide the overflow content */
+  cursor: pointer; /* Show pointer cursor to indicate clickability */
+}
+
+.overlay.expanded {
+  height: 100%; /* Expand the overlay to show the full content */
+  /* You can also add other styles for the expanded state if needed */
+}
+
+.content {
+  /* Set the initial height for the partial view */
+  height: 50px; /* Adjust this value to your desired partial view height */
+  /* Add other styles for the content */
+}

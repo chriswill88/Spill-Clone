@@ -1,0 +1,92 @@
+.overlay {
+  border-radius: 30px 30px 0 0;
+  background-color: #0e24c6;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  justify-content: space-evenly;
+  width: 100vw;
+  height: 100px;
+  z-index: 9999;
+  transition: height 0.3s ease;
+  cursor: pointer;
+  color: white;
+}
+
+.overlay.expanded {
+  height: 90%;
+}
+
+.insideBottombarContainer1 {
+  margin: 15px auto;
+  width: 80vw;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.insideBottombarContainer2 {
+  width: 80vw;
+}
+
+.bottomProfileImg {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: grey;
+}
+
+.bottombarInput {
+  width: 70%;
+  border-radius: 20px;
+  background-color: black;
+  font-size: 16px;
+  border: none;
+}
+
+.bottombarInput2 {
+  margin: auto;
+  width: 80%;
+  display: flex;
+  border-radius: 10px;
+  background-color: black;
+  font-size: 16px;
+  height: 100px;
+  justify-content: space-evenly;
+  border: none;
+  padding: 75px 0 0 10px;
+}
+
+.bottombarInput:focus,
+.bottombarInput2:focus {
+  outline: none;
+}
+
+.topButtons {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 10px;
+  left: 2.5%;
+  width: 95%;
+}
+
+button {
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  font-size: 15px;
+  color: inherit;
+  cursor: pointer;
+}
+
+.spillButton {
+  background-color: #f75900;
+  width: 75px;
+  height: 25px;
+  border-radius: 10px;
+}

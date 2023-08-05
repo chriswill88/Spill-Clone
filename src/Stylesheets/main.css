@@ -230,13 +230,209 @@ button {
   
   /* Tablet Portrait */
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
-    /* CSS rules here */
+    /* Sign Up page styles Start*/
     h1#signUp {
         text-align: center;
-        font-size: 50px;
+        font-size: 40px;
         margin-top: 10%;
-        color: blue;
+        color: white;
     }
+
+    button#loginButton, button#getStarted {
+        font-size: 30px;
+        padding: 20px;
+        border-radius: 20px;
+        width: 95%;
+        margin-left: 2.5%;
+        margin-top: 30%;
+        opacity: 80%;
+        color: black;
+    }
+
+    button#getStarted {
+        margin-top: 2%;
+        background-color: #0000ff;
+        color: white;
+        opacity: 100%;
+    }
+    /* Sign Up page styles End*/
+    
+    /* Login Page styles Start */
+    
+    h1#loginText {
+        margin-top: 4%;
+        margin-left: 5%;
+        font-size: 50px;
+        color: white;
+        letter-spacing: 2px;
+    }
+    
+    button#next, button#backButton, button#continueButton {
+        font-size: 30px;
+        padding: 20px;
+        border-radius: 20px;
+        width: 95%;
+        margin-left: 2.5%;
+        margin-top: 65%;
+        opacity: 80%;
+        color: black;
+    }
+    
+    button#next {
+        width: 93%;
+        margin-left: 4%;
+        margin-top: 2%;
+        opacity: 100%;
+        background-color: black;
+        color: white;
+        padding: 30px;
+    }
+    
+    button#backButton {
+        width: 25%;
+        background-color: black;
+        color: white;
+        opacity: 100%;
+        margin-top: 2%;
+        margin-left: 4%;
+    }
+    
+    button#continueButton {
+        width: 91.5%;
+        margin-left: 4%;
+        margin-top: 105%;
+        opacity: 100%;
+        background-color: blue;
+        color: white;
+        padding: 30px;
+    }
+    
+    p#passwordReset {
+        font-size: 30px;
+        text-align: center;
+        margin-top: 4%;
+        color: white;
+    }
+    
+    input {
+        font-size: 30px;
+        display: block;
+    }
+    
+    input#handle, input#password {
+        margin-top: 4%;
+        margin-left: 4%;
+        padding: 30px;
+        width: 85%;
+        border-radius: 20px;
+        margin-bottom: 2%;
+    }
+    
+    input#password {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    
+    /* Login Page styles End */
+    
+    /* Invite Code Page styles Start */
+    h1#inviteCode {
+        font-size: 50px;
+        margin-left: 4%;
+        margin-top: 5%;
+        color: white;
+        letter-spacing: 3px;
+    }
+    
+    p#needCode {
+        margin-top: 3%;
+        margin-left: 4%;
+        font-size: 30px;
+    }
+    
+    button#backButton, button#continueButton, button#continueBasicInfoButton {
+        font-size: 30px;
+        padding: 20px;
+        border-radius: 20px;
+        width: 95%;
+        margin-left: 2.5%;
+        margin-top: 65%;
+        opacity: 80%;
+        color: black;
+    }
+    
+    button#backButton {
+        width: 25%;
+        background-color: black;
+        color: white;
+        opacity: 100%;
+        margin-top: 2%;
+        margin-left: 4%;
+    }
+    
+    button#continueButton {
+        width: 91.5%;
+        margin-left: 4%;
+        margin-top: 7%;
+        opacity: 100%;
+        background-color: blue;
+        color: white;
+        padding: 30px;
+    }
+    
+    input#inviteCodeInput {
+        margin-top: 5%;
+        background-color: black;
+        padding: 20px;
+        margin-bottom: 0;
+        margin-left: 4%;
+        width: 86%;
+        border-radius: 20px;
+    } 
+    
+    /* Invite Code Page styles End */
+    
+    /* Basic Info Page styles Start */
+    
+    h1#basicInfo {
+        font-size: 50px;
+        margin-left: 4%;
+        margin-top: 2%;
+        color: white;
+        font-weight: bold;
+        letter-spacing: 3px;
+    }
+    
+    button#continueBasicInfoButton {
+        width: 86%;
+        margin-left: 4%;
+        margin-top: 2%;
+        opacity: 100%;
+        background-color: blue;
+        color: white;
+        padding: 10px;
+    }
+    
+    /* input#fullName, input#email, input#confirmEmail, input#dateOfBirth, input#country, input#phoneNumber {
+        margin-top: 10%;
+        margin-left: 4%;
+        padding: 30px;
+        width: 85%;
+        border-radius: 20px;
+        margin-bottom: 2%;
+    } */
+    
+    input.basicInfoPage {
+        margin-top: 2%;
+        margin-left: 4%;
+        width: 85%;
+        padding: 5px;
+        border-radius: 20px;
+        margin-bottom: 1%;
+        background-color: black;
+        text-indent: 50px;
+    }
+    /* Basic Info Page styles End */
   }
   
 /* Tablet Landscape */

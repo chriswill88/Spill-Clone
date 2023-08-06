@@ -1,19 +1,34 @@
 import React, { useState } from "react";
 import "./styles.css";
 
-const Overlay = ({ expanded, onClick }) => {
+const Overlay = ({ expanded, onClick, onSpill }) => {
   const [isExpanded, setIsExpanded] = useState(false);
+  const [spillText, setSpillText] = useState("");
 
-  const handleOverlayClick = () => {
-    setIsExpanded(!isExpanded);
-    onClick(); // Notify parent component (App.js) about the click event
+  const handleOverlayExpandClick = () => {
+    if (!isExpanded) {
+      setIsExpanded(true);
+      onClick();
+    }
+  };
+
+  const handleCancelClick = (event) => {
+    event.stopPropagation();
+    setIsExpanded(false);
+    onClick();
+  };
+
+  const handleSpillClick = () => {
+    onSpill(spillText);
+    setIsExpanded(false);
+    setSpillText("");
   };
 
   return (
     <>
       <div
         className={`overlay ${isExpanded ? "expanded" : ""}`}
-        onClick={handleOverlayClick}
+        onClick={handleOverlayExpandClick}
       >
         <div className="content">
           <div className="bottombarContainer">
@@ -22,13 +37,22 @@ const Overlay = ({ expanded, onClick }) => {
               {isExpanded ? (
                 <>
                   <div className="topButtons">
-                    <button className="cancelButton">Cancel</button>
-                    <button className="spillButton">Spill</button>
+                    <button
+                      className="cancelButton"
+                      onClick={handleCancelClick}
+                    >
+                      Cancel
+                    </button>{" "}
+                    <button className="spillButton" onClick={handleSpillClick}>
+                      Spill
+                    </button>
                   </div>
                   <div className="insideBottombarContainer2">
                     <textarea
                       placeholder="Add Text Here"
                       className="bottombarInput2"
+                      value={spillText}
+                      onChange={(e) => setSpillText(e.target.value)}
                     ></textarea>
                   </div>
                 </>

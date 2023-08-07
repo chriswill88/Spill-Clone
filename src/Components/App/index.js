@@ -48,6 +48,13 @@ const App = () => {
     }
   };
 
+  const handleSpillClick = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   const handleOverlayClick = () => {
     setIsOverlayExpanded(!isOverlayExpanded);
   };
@@ -56,7 +63,9 @@ const App = () => {
     <div className="app">
       <div className="topbarContainer">
         <SearchIcon />
-        <span className="topbarLink">Spill</span>
+        <span className="topbarLink" onClick={handleSpillClick}>
+          Spill
+        </span>
         <NotificationsIcon />
       </div>
 

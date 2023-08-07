@@ -29,6 +29,25 @@ const App = () => {
     setPosts([...posts, newPost]);
   };
 
+  const handleQuote = (text) => {
+    const existingQuote = posts.find((p) => p.desc === text && p.userId === 10);
+
+    if (existingQuote) {
+      setPosts(posts.filter((p) => p.id !== existingQuote.id));
+    } else {
+      const newPost = {
+        id: posts.length + 1,
+        userId: 10,
+        desc: text,
+        comment: 1,
+        quote: 0,
+        tea: 8,
+      };
+
+      setPosts([...posts, newPost]);
+    }
+  };
+
   const handleOverlayClick = () => {
     setIsOverlayExpanded(!isOverlayExpanded);
   };
@@ -48,7 +67,7 @@ const App = () => {
 
       <div className="middleContainer">
         {posts.map((p) => (
-          <Post key={p.id} post={p} />
+          <Post key={p.id} post={p} onQuote={handleQuote} />
         ))}
       </div>
 

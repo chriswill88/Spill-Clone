@@ -6,7 +6,7 @@ import FreeBreakfastIcon from "@mui/icons-material/FreeBreakfast";
 import { Users } from "../App/fakeData";
 import { useState } from "react";
 
-const Post = ({ post }) => {
+const Post = ({ post, onQuote }) => {
   const [tea, setTea] = useState(post.tea);
   const [isTead, setIsTead] = useState(false);
 
@@ -29,6 +29,7 @@ const Post = ({ post }) => {
   const quoteHandler = () => {
     setQuote(isQuoted ? quote - 1 : quote + 1);
     setIsQuoted(!isQuoted);
+    onQuote(post.desc);
   };
 
   return (

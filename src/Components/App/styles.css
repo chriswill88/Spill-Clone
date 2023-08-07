@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0;
   color: white;
+  font-family: SF Pro Display, Neue Haas Grotesk, ui-sans-serif, system-ui,
+    -apple-system, BlinkMacSystemFont, Arial;
+  font-weight: bold;
 }
 
 .app {
@@ -22,6 +25,7 @@
   position: sticky;
   top: 0;
   z-index: 1000;
+  margin: 0 0 2.5% 0;
 }
 
 .topbarLink {

@@ -12,6 +12,11 @@ const App = () => {
   const [posts, setPosts] = useState(InitialPosts);
 
   const handleSpill = (text) => {
+    if (!text.trim()) {
+      alert("Text cannot be empty!");
+      return;
+    }
+
     const newPost = {
       id: posts.length + 1,
       userId: 2,
